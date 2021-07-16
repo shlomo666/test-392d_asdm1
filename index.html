@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuckify</title>
+  
+  <script src="https://unpkg.com/compromise"></script>
+  <script src="./src/index.js"></script>
+
+  <style>
+    textarea {
+      font-size: 2rem;
+      color: white;
+      background-color: darkslategray;
+      width: 100%;
+      min-height: 100%;
+       /* height: max-content; */
+    }
+  </style>
+</head>
+<body>
+  <div style="display: flex; flex-direction: column; height: 100vh;">
+    <h1>#BLACKLIVESFUCKINGMATTER</h1>
+    <div style="display: flex; gap: 3px; flex-grow: 1;">
+      <textarea  oninput="app.onInput(this.value)"></textarea>
+      <textarea readonly id="output"></textarea>
+    </div>
+
+  </div>
+</body>
+</html>
